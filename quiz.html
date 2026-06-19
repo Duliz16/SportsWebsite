@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multipal Choice Quiz</title>
+        <link rel="stylesheet" href="quizStyles.css">
+    </head>
+
+    <body>
+            
+         <!--navigation bar start-->
+        <div class="nav">
+            <a href="cartpage.html">Cart</a>
+            <a href="StudentDetails.html">About</a>
+            <a href="index1.html">Gallery</a>
+            <a href="Inquiries.html">Inquiries</a>
+            <a href="quiz.html" class="active">Quiz</a>
+            <div class="dropdown">
+                <button class="button">Shop</button>
+                <div class="dropdown-content">
+                    <a href="racquet.html">Racquets</a>
+                    <a href="balls.html">Balls</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="clothes.html">Clothes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button">Sports</button> 
+                <div class="dropdown-content">
+                    <a href="Tennis.html">Tennis</a>
+                    <a href="Badminton.html">Badminton</a>
+                    <a href="squash.html">Squash</a>
+                    <a href="Tabletennis.html">Table Tennis</a>
+                </div>
+            </div>
+            <a href="index.html">Site map</a>
+            <a href="Home.html">Home</a>
+        </div>
+        <!--navigation bar end-->
+
+        <!--logo image-->
+        <img src="logo.jpeg" alt="Logo" style="text-align: center;">
+
+        <!---title for student details-->
+        <div class="titleContainer">
+            <h1 class="mainTitle">Racquet Games Quiz</h1>
+            <p class="pageTitle">Are you a massive fan of Racquet Games?</p>
+        </div>
+
+        <div class="quizQuestions" id="timer">
+        <!--The quiz has a time limit of 1 minute. Once the user started it shows the remaining time-->
+            <div id="timerLabel">Time Left:  </div> 
+            <div id="showTimer"></div>
+        </div>
+
+        <!--Quiz Start Button-->
+        <form id="quizForm">
+            
+            <div id="quizRules">
+                
+                <h1 id="quizHeading">Welcome to the QUIZ</h1>
+                <br>
+                <!--The rules of the quiz-->
+                <p class="quizDetails">1. You will have only <span id="quizTime">1 minute</span> to complete the quiz.</p>
+                <p class="quizDetails">2. Quiz consists of 10 questions</p>
+                <p class="quizDetails">3. You will get 2 marks for each correct answer, and -1 for each wrong answer</p>
+                <p class="quizDetails">4. Time starts once you click start quiz</p>
+                 
+                <!--The button for the user to start the quiz. When clicked, quiz questions will appear and the timer will get started-->
+                <div class="buttons">
+                    <button class="startButton" type="button" value="start" onclick="showQuiz(this.form);">START</button>
+                </div>
+            
+            </div>
+            
+
+            <div class="quizQuestions">
+                <!--10 Multiple-choice quiz questions using radio buttons-->
+                <div id="questions">
+                    <div class="ques">
+                        <p class="quesTitle">1. As with all sports there is a governing body. What is the governing body of badminton?</p>
+                        <input type="radio" name="ques1" id="bwFed" value="correct">
+                        <label for="bwFed">A. Badminton World Federation</label> <br>
+                        <input type="radio" name="ques1" id="bwFound" value="wrong">
+                        <label for="bwFound">B. Badminton World Foundation</label> <br>
+                        <input type="radio" name="ques1" id="wBOrg" value="wrong">
+                        <label for="wBOrg">C. World Badminton Organization</label> <br>
+                        <input type="radio" name="ques1" id="wBAss" value="wrong">
+                        <label for="wBAss">D. World Badminton Association</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">2. The badminton birdie is also known by another name which is what?</p>
+                        <input type="radio" name="ques2" id="shuttler" value="wrong">
+                        <label for="shuttler">A. The shuttler</label> <br>
+                        <input type="radio" name="ques2" id="shutCock" value="correct">
+                        <label for="shutCock">B. The Shuttlecock</label> <br>
+                        <input type="radio" name="ques2" id="racket" value="wrong">
+                        <label for="racket">C. The Badminton Racket</label> <br>
+                        <input type="radio" name="ques2" id="noName" value="wrong">
+                        <label for="noName">D. There is no other name</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">3. In which year did Badminton become an Olympic sport?</p>
+                        <input type="radio" name="ques3" id="1948" value="wrong">
+                        <label for="1948">A. 1948</label> <br>
+                        <input type="radio" name="ques3" id="1992" value="correct">
+                        <label for="1992">B. 1992</label> <br>
+                        <input type="radio" name="ques3" id="1968" value="wrong">
+                        <label for="1968">C. 1968</label> <br>
+                        <input type="radio" name="ques3" id="1976" value="wrong">
+                        <label for="1976">D. 1976</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">4. Which of the following pieces of safety equipment would be almost mandatory to play squash?</p>
+                        <input type="radio" name="ques4" id="helmet" value="wrong">
+                        <label for="helmet">A. Helmet</label> <br>
+                        <input type="radio" name="ques4" id="kneePads" value="wrong">
+                        <label for="kneePads">B. Knee Pads</label> <br>
+                        <input type="radio" name="ques4" id="eyeGoggles" value="correct">
+                        <label for="eyeGoggles">C. Eye Goggles</label> <br>
+                        <input type="radio" name="ques4" id="elbowPads" value="wrong">
+                        <label for="elbowPads">D. Elbow Pads</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">5. Where is the Headquarters of World Squash Federation located?</p>
+                        <input type="radio" name="ques5" id="berlin" value="wrong">
+                        <label for="berlin">A. Berlin</label> <br>
+                        <input type="radio" name="ques5" id="madrid" value="wrong">
+                        <label for="madrid">B. Madrid</label> <br>
+                        <input type="radio" name="ques5" id="newDelhi" value="wrong">
+                        <label for="newDelhi">C. New Delhi</label> <br>
+                        <input type="radio" name="ques5" id="hastings" value="correct">
+                        <label for="hastings">D. Hastings</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">6. In which Country Tennis originated ?</p>
+                        <input type="radio" name="ques6" id="england" value="wrong">
+                        <label for="england">A. England</label> <br>
+                        <input type="radio" name="ques6" id="russia" value="wrong">
+                        <label for="russia">B. Russia</label> <br>
+                        <input type="radio" name="ques6" id="france" value="correct">
+                        <label for="france">C. France</label> <br>
+                        <input type="radio" name="ques6" id="germany" value="wrong">
+                        <label for="germany">D. Germany</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">7. What is the length of standard Tennis Court ?</p>
+                        <input type="radio" name="ques7" id="78" value="Correct">
+                        <label for="78">A. 78 feet</label> <br>
+                        <input type="radio" name="ques7" id="75" value="wrong">
+                        <label for="75">B. 75 feet</label> <br>
+                        <input type="radio" name="ques7" id="72" value="wrong">
+                        <label for="72">C. 72 feet</label> <br>
+                        <input type="radio" name="ques7" id="70" value="wrong">
+                        <label for="70">D. 70 feet</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">8. Where is the headquarters of International Tennis Federation</p>
+                        <input type="radio" name="ques8" id="ber" value="wrong">
+                        <label for="ber">A. Berlin</label> <br>
+                        <input type="radio" name="ques8" id="mad" value="wrong">
+                        <label for="mad">B. Madrid</label> <br>
+                        <input type="radio" name="ques8" id="roeh" value="correct">
+                        <label for="roeh">C. Roehampton</label> <br>
+                        <input type="radio" name="ques8" id="has" value="wrong">
+                        <label for="has">D. Hastings</label> <br>
+                        
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">9. In what year did table tennis become an Olympic sport?</p>
+                        <input type="radio" name="ques9" id="1987" value="wrong">
+                        <label for="1987">A. 1987</label> <br>
+                        <input type="radio" name="ques9" id="1988" value="correct">
+                        <label for="1988">B. 1988</label> <br>
+                        <input type="radio" name="ques9" id="1989" value="wrong">
+                        <label for="1989">C. 1989</label> <br>
+                        <input type="radio" name="ques9" id="1990" value="wrong">
+                        <label for="1990">D. 1990</label> <br>
+                    </div>
+    
+                    <div class="ques">
+                        <p class="quesTitle">10. A standard table tennis game ends when one player scores how many points?</p>
+                        <input type="radio" name="ques10" id="nine" value="wrong">
+                        <label for="nine">A. Nine</label> <br>
+                        <input type="radio" name="ques10" id="ten" value="wrong">
+                        <label for="ten">B. Ten</label> <br>
+                        <input type="radio" name="ques10" id="eleven" value="correct">
+                        <label for="eleven">C. Eleven</label> <br>
+                        <input type="radio" name="ques10" id="twelve" value="wrong">
+                        <label for="twelve">D. Twelve</label> <br>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="submitButton" onclick="stopCountDown(); getValuesFromForm(this.form); changeBackgroundColor(); printResult(); ">SUBMIT</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="finalResults"> 
+                <!--After the quiz, user gets a complete summary of his performance. This includes -->
+                    <h1 id="resultTitle">Here's Your Results ...</h1>
+                    <div id="results">
+                        <div class="resultSummary">
+                            <div id="tot">
+                                <div id="totalScore"></div>
+                            </div>
+                            
+                            <ul>
+                                <li><div id="correctAnsCount" ></div></li>
+                                <li><div id="correctAns" ></div></li>
+                                <li><div id="incorrectAnsCount"></div></li>
+                                <li><div id="incorrectAns" ></div></li>
+                                <li><div id="emptyAnsCount"></div></li>
+                                <li><div id="emptyAns"></div></li>
+                               
+                            </ul>
+                            <div class="time">
+                                <div id="timeLeft"></div>
+                            </div>
+
+                            
+                        </div>
+                    </div> 
+                    <div class="buttons">
+                        <button class="retryButton" onclick="resetPage(),stopTimer();" type="button"> RETRY </button>
+                    </div>
+            </div>
+            
+        </form>
+        
+
+        <!--footer-->
+        <div class="footer">
+            <div class="footer-col">
+                <h2 style="text-align: left;"> ONLY HE WHO CAN SEE THE INVISIBLE CAN DO THE IMPOSSIBLE </h2>
+            </div>
+            <div class="footer-col">
+                <h2>Customer Service</h2>
+                <ul>
+                    <li><a href="editorsPage.html">Page Editor</a></li>
+                    <li><a href="sizeguide.png">Size Guide</a></li>
+                    <li><a href="inquires.html">Feedback form</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://Instagram.com">Instagram</a></li>
+                    <li><a href="https://YouTube.com">Youtube</a></li>
+                </ul>
+            </div>
+        <hr>
+        <p class="footer-col" style="font-size: 18px;">Copyright 2022 - Sports.lk</p>
+    </div>
+
+
+        <script>
+            let total = 0;
+            let correctCount = 0;
+            let incorrectCount = 0;
+            let correctAns = '';
+            let incorrectAns = '';
+            let emptyCount = 0;
+            let emptyAns = '';
+            let timer;
+            let time;
+
+
+            function showQuiz() {
+                document.getElementById("quizRules").style.display = "none";
+                document.getElementsByClassName("quizQuestions")[0].style.display = 'block';
+			    document.getElementsByClassName("quizQuestions")[1].style.display = 'block';
+                startCountDown();
+                timeOver();
+            }
+
+            function getValuesFromForm (pForm){
+                for(i = 1; i <= 10; i++) {
+                    let questionNum = document.getElementsByName('ques'+i);
+                    let selectedOption = getRadioValue(questionNum);
+                    checkAnswers(selectedOption);
+                }
+            }
+
+            function getRadioValue (radioArray){
+                for ( let i = 0; i< radioArray.length; i++ ) {
+                    if ( radioArray[i]. checked ) {
+                        return radioArray[ i ].value;
+                    }
+                }
+                return "";
+            }
+
+            function checkAnswers (answer){
+                if (answer == 'correct'){
+                    total += 2;
+                    correctCount += 1;
+                    correctAns += 'question '+i+', ';
+                }
+                else if (answer == 'wrong'){
+                    total -= 1
+                    incorrectCount += 1;
+                    incorrectAns += 'question '+i+', ';
+                }
+
+                else{
+                    emptyCount += 1;
+                    emptyAns += 'question '+i+', ';
+                }
+            }
+
+          
+            function printResult(){
+                document.getElementById("quizRules").style.display = 'none';
+                document.getElementsByClassName("quizQuestions")[0].style.display = 'none';
+				document.getElementsByClassName("quizQuestions")[1].style.display = 'none';
+				document.getElementById("finalResults").style.display = 'block';
+
+                document.getElementById('totalScore').innerHTML = 'TOTAL SCORE: '+total;
+				document.getElementById('correctAnsCount').innerHTML = 'Number of correct answers: '+ correctCount;
+                document.getElementById('correctAns').innerHTML = '( '+ correctAns+ ')';
+				document.getElementById('incorrectAnsCount').innerHTML = 'Number of incorrect answers: '+ incorrectCount;
+                document.getElementById('incorrectAns').innerHTML = '( '+ incorrectAns+ ')';
+                document.getElementById('emptyAnsCount').innerHTML = 'Number of missed questions: '+ emptyCount;
+                document.getElementById('emptyAns').innerHTML = '( '+ emptyAns+ ')';
+				document.getElementById('timeLeft').innerHTML = 'You took '+ (60-time)+' seconds to complete the quiz';
+            }
+
+            function startCountDown(){
+                time = 59;
+				timer = setInterval(
+					function(){
+						document.getElementById('showTimer').innerHTML = time;
+						if(time>0){
+							time--
+						}else{
+							stopCountDown();
+							time=0;
+						}
+					},1000);
+            }
+
+            function stopCountDown(){
+				clearInterval(timer);
+            }
+
+            function timeOver() {
+				setTimer = setTimeout('timeUp()',60000);		
+			}
+
+			function timeUp() {
+				alert("Your Time is up!! Here's Your results");
+                getValuesFromForm(this.form); 
+                changeBackgroundColor();
+                printResult(); 
+				
+			}
+
+            function changeBackgroundColor(){
+				if(total>=15) {
+					document.body.style.backgroundColor = '#E0FFFF'
+				}
+                else if(total<15 && total >=5) {
+					document.body.style.backgroundColor = '	#FAEBD7'
+				}
+                if(total<5) {
+					document.body.style.backgroundColor = '#B83F3F'
+				}
+			}
+
+            function resetPage(){
+				document.getElementById("quizForm").reset();
+				document.getElementById("quizRules").style.display = 'block';
+				document.getElementsByClassName("quizQuestions")[0].style.display = 'none';
+				document.getElementsByClassName("quizQuestions")[1].style.display = 'none';
+				document.getElementById("finalResults").style.display = 'none';
+				
+                total = 0;
+                correctCount = 0;
+                incorrectCount = 0;
+                correctAns = '';
+                incorrectAns = '';
+                emptyCount = 0;
+                emptyAns = '';
+                time = 59;
+                document.body.style.backgroundColor="#fff";
+
+            }
+
+        </script>
+        
+    </body>
+</html>
+        

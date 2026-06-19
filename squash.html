@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Sports.LK </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .nav {
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .nav a {
+            float: right;
+            color: #e9e6e6;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .nav a.active {
+            background-color: #5b5e5ed8;
+            color: rgb(233, 230, 230);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 30%;
+            padding: 5px;
+
+            padding: 5px 8px;
+            margin: left;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: flex;
+        }
+
+
+        .product-image img {
+            width: 100%;
+            height: calc(100vh - 43px);
+            object-fit: cover;
+   
+        }
+
+        .description {
+            /*margin: 50% 30% 70% 30%;*/
+            padding-top: 0%;
+            
+        }
+
+        .footer{
+            background: #000000;
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 40px 0 10px;
+        }
+
+        .footer p{
+            color: #8a8a8a;
+        }
+
+        .footer h3{
+            color: #fff;
+            margin-bottom: 20px;
+            margin-left: 40px;
+        }
+
+        .footer-col{
+            min-height: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            text-indent: 40px;
+            text-align: center;
+        }
+        p{
+            color: rgb(104, 100, 100);
+        }
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown .button {
+            font-size: 17px;  
+            border: none;
+            cursor: pointer;
+            color: white;
+            padding: 14px 14px;
+            background-color: inherit;
+        }
+
+        .dropdown .button:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 80px;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 13px 18px;
+            text-align: left;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        ul li a{
+            font-size: 18px;
+            color: #b5b5b5;
+            text-decoration: none;
+        }
+
+        ul li a:hover{
+            color: rgb(99, 99, 99);
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+     <!--navigation bar-->
+    <div class="nav">
+        <a href="cartpage.html">Cart</a>
+        <a href="StudentDetails.html">About</a>
+        <a href="index1.html">Gallery</a>
+        <a href="Inquiries.html">Inquiries</a>
+        <a href="quiz.html">Quiz</a>
+        <div class="dropdown">
+            <button class="button">Shop</button>
+            <div class="dropdown-content">
+                <a href="racquet.html">Racquets</a>
+                <a href="balls.html">Balls</a>
+                <a href="shoes.html">Shoes</a>
+                <a href="clothes.html">Clothes</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="button">Sports</button> 
+            <div class="dropdown-content">
+                <a href="Tennis.html">Tennis</a>
+                <a href="Badminton.html">Badminton</a>
+                <a class="active" href="squash.html">Squash</a>
+                <a href="Tabletennis.html">Table Tennis</a>
+            </div>
+        </div>
+        <a href="index.html">Site map</a>
+        <a href="Home.html">Home</a>
+    </div>
+    <img src="logo.jpeg" alt="Logo">
+
+    <!--products-->
+    <div class="product-image">
+        <img src="squash/Images/squashmain.jpg" alt="Squash" id="ProductImage1"/>
+    </div>
+
+    <div class="description">
+        <h1 style="text-align: center;">Squash - that's not exercise,it's flagellation</h1>
+    </div>
+
+    <p>Squash is a racket and ball sport in which two players compete with a tiny, hollow rubber ball on a four-walled court.
+        The players alternate striking the ball with their rackets against the four walls of the court's playing surfaces.
+        The goal of the game is to strike the ball in a way that prevents the opponent from making a legitimate return.
+        Squash is played by around 20 million individuals in over 185 countries on a daily basis.</p>
+
+   
+    <h3 style="text-align: center;"><b>Equipments</b></h3>
+    <h4 style="text-align: center;">Racquet</h4>
+    <p>Squash rackets may be as long as 686 mm (27.0 in) and as broad as 215 mm (8.5 in), with a strung area of 500 square centimeters (77.5 sq in). 
+        The highest weight allowed is 255 grams (9.0 ounces), however most are between 90 and 150 grams (3–5.3 ounces).
+        The tension on the racket strings is normally between 25 and 30 pounds.</p>
+    <img src="squash/Images/squash2.webp" alt="squash" style="width: 32%;"/>
+    
+    <h4 style="text-align: center;">Ball</h4>
+    <p>Squash balls range in diameter from 39.5 to 40.5 mm and weigh between 23 and 25 grams. Two pieces of rubber compound are cemented together
+        to form a hollow spherical, then rubbed to a matte surface. Different balls are available for different temperature and atmospheric conditions,
+        as well as different levels of play: more experienced players utilize slower balls with less bounce than less experienced players (slower balls 
+        tend to "die" in court corners, rather than "standing up" to allow easier shots).</p>
+    <img src="squash/Images/squashball.jpeg" alt="squashball" width="210px" height="180px"/>
+
+    <h4 style="color: #000000; text-align: center;">Court</h4>
+    <p>The squash court consists of a four-sided playing surface. The court surface has a front line that divides the front and rear of the court, 
+        as well as a half court line that divides the left and right sides of the back section of the court, resulting in three 'boxes': the front half, 
+        back left quarter, and back right quarter. Smaller service boxes can be found in the back two boxes. A front wall, two side walls, and a rear wall 
+        make up the court's four walls. An 'out line' extends from the top of the front wall to the rear wall, dropping down the side walls.</p>
+    <img src="squash/Images/squashcourt.png" alt="court" width="250px" height="300px"/>
+
+    <h3 style="color: #000000; text-align: center;">Service</h3>
+    <p>To determine who serves first, the players spin a racket. This player chooses whether to serve from the left or right service box to begin the opening rally.
+        As the player strikes the ball, one of the server's foot has to be in the service box, without touching any portion of the service box lines.
+        The ball must contact front wall just above service line and below the out line after being struck by the racket and settle in the opposing back quarter court.
+        After a serve has hit front wall, the receiving player might opt to volley it. The two players trade sides for the next point if the server wins the point.
+        If the server misses the point, the opposition serves from any box.</p>
+    <img src="squash/Images/squashservice.jpeg" alt="service" width="250px" height="300px"/>
+
+    <h3 style="color: #000000; text-align: center;">Play</h3>
+    <p>AThe take turns striking the ball by the front wall, over the tin, and below the out line after the serve.
+        The ball may contact the sides or back walls at any moment, as long as it does not go beyond the out line. After striking the racquet and before striking the front wall, it must not contact the floor. A ball that lands on the out line or the line that runs along the top of the tin is declared out.
+        Before a player must return the ball to the front wall, it is permitted to bounce once on the floor (and any amount of times against side or back walls).</p>
+    <img style="margin-bottom: 20px;" src="squash/Images/squashservice2.jpeg" alt="play" width="250px" height="300px"/>
+
+    <h3 style="color: #000000; text-align: center;">Scoring system</h3>
+    <h4 style="text-align: center;">Point-a-Rally to 11</h4>
+    <p>Point-a-rally scoring (PARS) is used to score games up to 11 points. PARS is the current official points system for all levels of professional squash 
+        tournaments and is nearly generally favoured by the game's top pros. Regardless of whether they were the server or returner, the winner of a rally wins 
+        a point in PARS. Games are played to a maximum of 11 players and must be won by a margin of two points. If the score is 10–10, the game will continue 
+        until one player wins by two points. In most competitions, games are played to a "best-of-five" format (i.e. the first player to win three games).</p>
+   
+
+    <h3 style="color: #000000; text-align: center;">Point-a-Rally to 15</h3>
+    <p>Between 1989 and 2003, the World Championships employed point-a-rally scoring up to 15 points. Many amateur leagues employed PARS to 15, with the tiebreaker being two clear points (as per normal PARS) from 14-14, because PARS to 11 was deemed too short.
+        When the Professional Squash Association (PSA) chose to move to PARS 11 in 2004, this method went out of favor.
+        Games were seen to linger too long, and the fittest player, not necessarily the better player, would typically win.</p>
+   <img style="margin-bottom: 20px;" src="squash/Images/squashrules.jpeg" alt="rules" width="300px" height="350px"/>
+
+<!--footer-->
+<div class="footer">
+    <div class="footer-col">
+        <h2 style="text-align: left;"> ONLY HE WHO CAN SEE THE INVISIBLE CAN DO THE IMPOSSIBLE </h2>
+    </div>
+    <div class="footer-col">
+        <h3>Customer Service</h3>
+        <ul>
+            <li><a href="Editorpage.html">Edior Page</a></li>
+            <li><a href="sizeguide.png">Size Guide</a></li>
+            <li><a href="inquires.html">Feedback form</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://Instagram.com">Instagram</a></li>
+            <li><a href="https://YouTube.com">Youtube</a></li>
+        </ul>
+    </div>
+    <hr>
+    <p class="footer-col" style="font-size: 18px;">Copyright 2022 - Sports.lk</p>
+</div>
+
+
+</body>
+
+</html>
